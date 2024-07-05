@@ -13,55 +13,100 @@
 
 
 public partial class Time : Form
+
 {
+
     private Timer timer; // Приватен објект за тајмер
+    
     private int timeRemaining; // Променлива за преостанатото време
+    
     private const int totalTime = 10 * 60; // Вкупно време во секунди (10 минути)
+    
     public Time()
+    
     {
+    
         InitializeComponent();
+        
     }
+    
     private void timer1_Tick(object sender, EventArgs e)
+    
     {
+    
         // Оваа метода се повикува секоја секунда од тајмерот
+        
         if (timeRemaining > 0)
+        
         {
+        
             // Доколку уште има време, намали го за една секунда
+            
             timeRemaining--;
+            
             // Претвори го преостанатото време во облик на часовник (mm:ss) и прикажи го во лабелата
+            
             TimeSpan timeSpan = TimeSpan.FromSeconds(timeRemaining);
+            
             lblTimer.Text = timeSpan.ToString(@"mm\:ss");
+            
             // Постави ја вредноста на прогрес барот да се одразува на преостанатото време
+            
             pbTime.Value = timeRemaining;
+            
         }
+        
         else
+        
         {
+        
             // Доколку времето истече, прекини го тајмерот и прикажи порака за завршување на нарачката
+            
             timer.Stop();
+            
             MessageBox.Show("Нарачката пристигнува!");
+            
         }
+        
     }
+    
     private void Time_Load(object sender, EventArgs e)
+    
     {
+    
         // Овој метод се повикува при вчитување на формата
+        
         timeRemaining = totalTime; // Постави го преостанатото време на вкупното време (10 минути)
+        
         // Постави ги карактеристиките на прогрес барот
+        
         pbTime.Maximum = totalTime; // Максимална вредност на прогрес барот
+        
         pbTime.Value = totalTime; // Тековна вредност на прогрес барот (почетна вредност)
+        
         pbTime.Step = 1; // Чекор на кој прогрес барот се движи (одзема во овој случај)
+        
         pbTime.ForeColor = System.Drawing.Color.Green; // Боја на прогрес барот
+        
         pbTime.Style = System.Windows.Forms.ProgressBarStyle.Continuous; // Стил на прогрес барот
+        
         // Креирај и стартувај го тајмерот
+        
         timer = new Timer();
+        
         timer.Interval = 1000; // Интервал од 1 секунда
+        
         timer.Tick += timer1_Tick; // Поврзи го тајмерот со методата за тиктирање
+        
         timer.Start(); // Стартувај го тајмерот
     }
+    
 }
 
 Објаснување на класата:
 
 Приватни променливи:
+
 •	timer: Објект од класата Timer кој се користи за тајмерот.
 •	timeRemaining: Чува преостанатото време во секунди до завршување на тајмерот.
 •	totalTime: Константа која ја дефинира вкупната должина на тајмерот во секунди (10 минути).
