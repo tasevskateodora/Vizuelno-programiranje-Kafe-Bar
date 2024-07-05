@@ -1,0 +1,14 @@
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\bin\Debug\KafeBar2.exe.config
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\bin\Debug\KafeBar2.exe
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\bin\Debug\KafeBar2.pdb
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.csproj.AssemblyReference.cache
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.Form1.resources
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.Properties.Resources.resources
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.csproj.GenerateResource.cache
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.csproj.CoreCompileInputs.cache
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.exe
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.pdb
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.AddTable.resources
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.Form2.resources
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.AddOrder.resources
+C:\Users\Matej Tasevski\Desktop\KafeBar2\KafeBar2\obj\Debug\KafeBar2.Time.resources
