@@ -184,6 +184,7 @@
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(228, 22);
             this.tbPrice.TabIndex = 11;
+            this.tbPrice.Validating += new System.ComponentModel.CancelEventHandler(this.tbPrice_Validating);
             // 
             // btnAddOrder
             // 

@@ -57,5 +57,25 @@ namespace KafeBar2
                 e.Cancel = false;
             }
         }
+
+        private void tbPrice_Validating(object sender, CancelEventArgs e)
+        {
+            string sh = tbPrice.Text.Trim();
+            foreach (char c in sh)
+            {
+                if (Char.IsLetter(c))
+                {
+                    errorProvider1.SetError(tbPrice, "Мора да внесете цена!");
+                    e.Cancel = true;
+                    return;
+                }
+
+                else
+                {
+                    errorProvider1.SetError(tbPrice, null);
+                    e.Cancel = false;
+                }
+            }
+        }
     }
 }
